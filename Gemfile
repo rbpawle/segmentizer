@@ -25,7 +25,10 @@ end
 
 gem 'jquery-rails'
 
-gem 'therubyracer'
+group :production do
+  gem 'therubyracer', '~> 0.9.3.beta1'
+end
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
